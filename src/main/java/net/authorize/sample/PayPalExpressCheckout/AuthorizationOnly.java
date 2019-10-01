@@ -21,7 +21,8 @@ import net.authorize.api.controller.base.ApiOperationBase;
 public class AuthorizationOnly {
 
     public static ANetApiResponse run(String apiLoginId, String transactionKey, Double amount) {
-        System.out.println("PayPal Authorize Only Transaction");
+        System.out.println("PayPal Authorize Only Transaction -- test");
+		
         
         //Common code to set for all requests
         ApiOperationBase.setEnvironment(Environment.SANDBOX);
