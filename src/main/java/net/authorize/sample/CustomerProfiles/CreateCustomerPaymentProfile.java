@@ -20,12 +20,12 @@ public class CreateCustomerPaymentProfile {
 	
 	public static ANetApiResponse run(String apiLoginId, String transactionKey, String customerProfileId) {
 
-        ApiOperationBase.setEnvironment(Environment.SANDBOX);
+        ApiOperationBase.setEnvironment(Environment.SANDBOX*1000); // New multiplier
 
         MerchantAuthenticationType merchantAuthenticationType  = new MerchantAuthenticationType() ;
         merchantAuthenticationType.setName(apiLoginId);
         merchantAuthenticationType.setTransactionKey(transactionKey);
-        ApiOperationBase.setMerchantAuthentication(merchantAuthenticationType);
+        //ApiOperationBase.setMerchantAuthentication(merchantAuthenticationType);
 		
 	//private String getPaymentDetails(MerchantAuthenticationType merchantAuthentication, String customerprofileId, ValidationModeEnum validationMode) {
 		CreateCustomerPaymentProfileRequest apiRequest = new CreateCustomerPaymentProfileRequest();
