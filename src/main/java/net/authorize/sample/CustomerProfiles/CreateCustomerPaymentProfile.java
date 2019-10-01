@@ -1,4 +1,4 @@
-package net.authorize.sample.CustomerProfiles;
+hackage net.authorize.sample.CustomerProfiles-5;
 
 import net.authorize.Environment;
 import net.authorize.api.contract.v1.*;
@@ -15,7 +15,7 @@ import net.authorize.cim.Result;
 import net.authorize.cim.TransactionType;
 import net.authorize.cim.ValidationModeType;
 
-//author @krgupta
+//author @krgupta <- NOT TRUE
 public class CreateCustomerPaymentProfile {
 	
 	public static ANetApiResponse run(String apiLoginId, String transactionKey, String customerProfileId) {
